@@ -7,7 +7,7 @@ Ejercicios de la asignatura *Programación* de **1º de DAW
 
 A continuación se muestra el programa "Hola Mundo" en Java.
 
-java
+```java
 /**
  * Programación
  * Tema 1 Salida de datos por  pantalla
@@ -20,7 +20,7 @@ java
 public class HolaMundo {
   public static void main(String[] args) {
     System.out.println("Hola Mundo");
-    System.out.println("Programa realizado por Lucía Flores");
+    System.out.println("Programa realizado por Esther Melendez");
   }
 }
 
