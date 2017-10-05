@@ -1,37 +1,40 @@
-# ejercicios-programacion-daw
+# Ejercicios de Programación
 
-Ejercicios de la asignatura ***Progamación de 1º DAW*** (Desarrollo de Aplicaciones Web)
+Ejercicios de la asignatura *Programación* de **1º de DAW
+(Desarrollo de Aplicaciones Web)** en el IES Campanillas.
 
-## Ejemplo de unprograma en Java
+## Ejemplo de un programa en Java
 
-A continuación, se muestra el programa *Hola Mundo* en Java.
+A continuación se muestra el programa "Hola Mundo" en Java.
 
-´´´java
-
+java
 /**
- * Muestra por pantalla la frase "Hola mundo"
- *
+ * Programación
+ * Tema 1 Salida de datos por  pantalla
+ * Ejercicio 1
+ * 29 de septiembre de 2017
+ * 
  * @author Esther Melendez
  */
 
-public class HolaMundo { // Clase principal
+public class HolaMundo {
   public static void main(String[] args) {
-    System.out.println("¡Hola mundo!");
+    System.out.println("Hola Mundo");
+    System.out.println("Programa realizado por Lucía Flores");
   }
 }
 
-´´´
 
-Para compilar el programa teclea lo siguiente:
+Puedes compilar el programa mediate el siguiente comando:
 
-´´´console
+console
 javac HolaMundo.java
 
-Puedes ejecutar el programa mediante el siguiente comando:
 
-´´´console
+
+Puedes ejecutar el programa mediate el siguiente comando:
+
+```console
 java HolaMundo
-
-´´´
 
 
