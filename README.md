@@ -13,18 +13,18 @@ public class HolaMundo { //Clase principal
                System.out.print("Hola Mundo");
        }
 }
-```
+´´´
 
 Para compilar el programa teclea lo siguiente:
 
-```console
+´´´console
 javac HolaMundo.java
 
 Puedes ejecutar el programa mediante el siguiente comando:
 
-```console
+´´´console
 java HolaMundo
 
-```
+´´´
 
 
