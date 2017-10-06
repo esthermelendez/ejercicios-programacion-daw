@@ -19,7 +19,7 @@ A continuación se muestra el programa "Hola Mundo" en Java.
 
 public class HolaMundo {
   public static void main(String[] args) {
-    System.out.println("Hola Mundo");
+    System.out.println("/033[33mHola Mundo"]);
     System.out.println("Programa realizado por Esther Melendez");
   }
 }
