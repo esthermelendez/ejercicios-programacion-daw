@@ -27,14 +27,14 @@ public class HolaMundo {
 
 Puedes compilar el programa mediate el siguiente comando:
 
-console
+```console
 javac HolaMundo.java
-
+```
 
 
 Puedes ejecutar el programa mediate el siguiente comando:
 
 ```console
 java HolaMundo
-
+```
 
