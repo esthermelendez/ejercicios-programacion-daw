@@ -38,7 +38,7 @@ Puedes ejecutar el programa mediante el comando `java`:
 java HolaMundo
 ```
 
-## QUé se estudia en Programación
+## Qué se estudia en Programación
 
 * Lenguaje de programación Java
 * Comandos de Linux
