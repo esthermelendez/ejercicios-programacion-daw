@@ -6,17 +6,17 @@ public class Ejercicio6T6 {
     int num1 = ((int)(Math.random()*100) + 1);
     int contadorIntentos = 5;
     
-    for (int i = 0; i < 5; i++) {
+    for (int i = 1; i < 5; i++) {
       
       if ( numIntroducido < num1 ) {
         contadorIntentos--;
-        System.out.println("Has fallado, el numero introducido es menor al numero elegido, te quedan " + contadorIntentos + ". Introduce un numero : ");
+        System.out.println("Has fallado, el numero introducido es menor al numero elegido, te quedan " + contadorIntentos + " intentos. Introduce un numero : ");
         numIntroducido = Integer.parseInt(System.console().readLine());
       }
       
       if (numIntroducido > num1 ) {
         contadorIntentos--;
-        System.out.println("Has fallado, el numero introducido es mayor al numero elegido, te quedan " + contadorIntentos + ". Introduce un numero : ");
+        System.out.println("Has fallado, el numero introducido es mayor al numero elegido, te quedan " + contadorIntentos + " intentos. Introduce un numero : ");
         numIntroducido = Integer.parseInt(System.console().readLine());
       }
     }
