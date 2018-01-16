@@ -1,0 +1,214 @@
+package biblioteca;
+
+public class Biblioteca {
+
+
+
+  /** 1
+  * Calcula si un número es capicua
+  *
+  * @param numero entero
+  * @return si el número es capicua o no
+  */
+
+  public static boolean esCapicua(int numero) {
+    int aux = numero;
+    int nuevoNumero = 0;
+    
+    while (aux > 0) {
+    
+      nuevoNumero = nuevoNumero + aux % 10;
+      nuevoNumero = nuevoNumero * 10;
+      aux /= 10;
+    }
+    nuevoNumero /= 10;
+
+    if(numero == nuevoNumero) {
+      return true;
+    }else{
+      return false;
+    }
+  }
+
+  /** 2
+  * Calcula si un número es primo
+  *
+  * @param numero entero positivo
+  * @return si el número es primo o no
+  */
+
+  public static boolean esPrimo(int x) {
+    for (int i = 2; i < x; i++) {
+      if ((x % i) == 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  /** 3
+  * Calcula el numero primo anterior al introducido
+  *
+  * @param numero entero positivo
+  * @return Devuelve el menor primo que es mayor al número que
+    se pasa como parámetro.
+  */
+
+  public static int esPrimoSiguiente(int x) {
+    int aux = x;
+    
+    do{
+        aux++;
+     } while (!esPrimo(aux));
+     
+     return aux;
+  }
+
+  /** 4
+  * Dada una base y un exponente devuelve la potencia.
+  *
+  * @param numero entero positivo
+  * @param numero entero positivo
+  * @return la potencia
+  */
+
+  public static int digitos(int pot, int exp) {
+      
+    int aux = pot;
+    
+    for (int i = 1; i < exp; i++) {
+      aux *= pot;
+    }
+    
+    return aux;
+  }
+    
+  /** 5
+  * Cuenta el número de dígitos de un número entero
+  *
+  * @param numero entero positivo
+  * @return Devuelve el número de dígitos de un número
+  */
+
+  public static int digitos(int x) {
+    int n = 0;
+    
+    if (x / 10 == 0) {
+      System.out.print("1");
+    } else { 
+      do {
+        x = x / 10;
+        n++;
+      } while(x != 0);
+    }
+    
+    return n;
+  }
+
+  /** 6
+  * Dar la vuelta a un número
+  *
+  * @param numero entero positivo
+  * @return Devuelve el número dado la vuelta
+  */
+
+  public static int voltea(int x) {
+    int aux = x;
+    int nuevoNumero = 0;
+    
+    while (aux > 0) {
+    
+      nuevoNumero = nuevoNumero + aux % 10;
+      nuevoNumero = nuevoNumero * 10;
+      aux /= 10;
+    }
+    nuevoNumero /= 10;
+    
+    return nuevoNumero;
+  }
+
+  /** 7
+  * Devuelve el dígito que está en la posición n de un número
+    entero. Se empieza contando por el 0 y de izquierda a derecha.
+  *
+  * @param numero entero positivo
+  * @param numero entero positivo
+  * @return Devuelve el digito según la posición
+  */
+
+  public static int digitoN(int num, int n) {
+    int aux = voltea(num);
+    
+    if (n == 1){
+      return aux % 10;
+    }else{
+      for(int i = 0; i < n; i++){
+        aux = aux / 10;
+      }
+      
+      return aux % 10;
+    }
+  }
+
+  /** 9
+  * Le quita a un número n dígitos por detrás (por la
+    derecha).
+  *
+  * @param numero entero positivo
+  * @param numero entero positivo
+  * @return Devuelve el número reducido 
+  */
+
+  public static int digitoDetras(int num, int n) {
+    int contador = 0;
+    
+    if (num >= n) {
+      do {
+        num = num / 10;
+        contador++;
+      }while(contador != n);
+      return num;
+    } else { 
+      return 0;
+    }
+  }
+  
+  /** 10
+  * Le quita a un número n dígitos por delante (por la
+    izquierda).
+  *
+  * @param numero entero positivo
+  * @param numero entero positivo
+  * @return Devuelve el número reducido 
+  */
+  
+  public static int digitoDelante(int num, int n) {
+    int contador = 0;
+    int nuevoNumero = 0;
+    int aux = num;
+    
+    while (aux > 0) {
+    
+      nuevoNumero = nuevoNumero + aux % 10;
+      nuevoNumero = nuevoNumero * 10;
+      aux /= 10;
+    }
+    nuevoNumero /= 10;
+    
+    if (nuevoNumero >= n) {
+      do {
+        nuevoNumero = nuevoNumero / 10;
+        contador++;
+      }while(contador != n);
+    } else { 
+      }
+    
+    nuevoNumero = voltea(nuevoNumero);
+    
+    return nuevoNumero;
+  }
+}
+
+  
+
+
