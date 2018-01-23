@@ -148,18 +148,6 @@ public class Biblioteca {
       return aux % 10;
     }
   }
-  
-  /** 8
-  * Da la posición de la primera ocurrencia de un dígito
-    dentro de un número entero. Si no se encuentra, devuelve -1
-  *
-  * @param numero entero positivo
-  * @param numero entero positivo
-  * @return Devuelve la posición del digito
-  */
-  
-  //public static int posicionDeDigito(int x, int e) {
-    
 
   /** 9
   * Le quita a un número n dígitos por detrás (por la
@@ -261,46 +249,24 @@ public class Biblioteca {
   *
   * @param numero entero positivo
   * @param numero entero positivo
-  * @return Devuelve el trozo de número
+  * @return Devuelve el número completo
   */
   
-  public static int trozoDeNumero(int i, int e, int j) {
-    
-    int x = biblioteca.Biblioteca.voltea(i);
-    
-    do {
-     x = x / 10;
-    } while ( x % 10 != e);
-    
-    int x2 = biblioteca.Biblioteca.voltea(x);
-    
-    do {
-     x2 = x2 / 10;
-    } while ( x2 % 10 != j);
-   
-    return x2;
+  public static int trozoDeNumero(int x, int n) {
   }
   
   /** 14
-  * Junta dos números
+  *  Pega dos números para formar uno.
   *
   * @param numero entero positivo
   * @param numero entero positivo
   * @return Devuelve el número completo
   */
   
-  public static int juntaNumeros(int x, int j) {
-    
-    int n = biblioteca.Biblioteca.digitos(j);
-    
-    int numero = biblioteca.Biblioteca.potencia(10,n);
-    
-    int numero2 = numero * x;
-    
-    int numero3 = numero2 + j;
-    
-    return numero3;
+  public static int juntaNumeros(int x, int n) {
   }
+  
+  
 }
 
 
