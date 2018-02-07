@@ -22,6 +22,8 @@ public class Ejercicio5BT7 {
       columna = 0;
     }
     
+    
+    
     for(fila = 0; fila < 6; fila++) {
       System.out.print("Fila: " + fila);
       
@@ -37,5 +39,23 @@ public class Ejercicio5BT7 {
     System.out.println();
     System.out.println("Máximo = " + maximo);
     System.out.println("Mínimo = " + minimo);
+    for(fila = 0; fila < 6; fila++) {
+      for(columna = 0; columna < 10; columna++) {
+        if (maximo == n[fila][columna]) {
+          System.out.println("El maximo se encuentra en la fila " + fila + " y en la columna " + columna);
+        } else {
+          }
+      }
+      columna = 0;
+    }
+    for(fila = 0; fila < 6; fila++) {
+      for(columna = 0; columna < 10; columna++) {
+        if (minimo == n[fila][columna]) {
+          System.out.println("El minimo se encuentra en la fila " + fila + " y en la columna " + columna);
+        } else {
+          }
+      }
+      columna = 0;
+    }
   }
 }
