@@ -11,9 +11,9 @@ package tema9e1;
  */
 public class Tema9E1 {
   public static void main(String[] args) {
-   Caballo blanquito = new Caballo();
-   Caballo nieve = new Caballo();
-   Caballo rocinante = new Caballo();
+   Caballo blanquito = new Caballo("macho");
+   Caballo nieve = new Caballo("hembra");
+   Caballo rocinante = new Caballo("macho");
    
    System.out.println("hola caballito");
    rocinante.relincha();
