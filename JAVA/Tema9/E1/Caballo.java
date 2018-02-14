@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tema9e1;
+package E1;
 
 /**
  *
@@ -21,10 +21,11 @@ public class Caballo {
   
   public Caballo() {
   }
-  
-  public Caballo(String raza) {
-    this.raza = raza;
+
+  public Caballo(String nombre) {
+    this.nombre = nombre;
   }
+  
 
   public Caballo(int edad) {
     this.edad = edad;
@@ -44,11 +45,19 @@ public class Caballo {
   String getSexo() {
     return this.sexo;
   }
-  
-  void elige(Caballo elegido) {
-    if (this.sexo.equals("hembra")) {
-     System.out.println("duermo");
-    } else 
-      System.out.println("cabalgo");
-      }
+
+  public void setSexo(String sexo) {
+    this.sexo = sexo;
   }
+
+  
+  
+  public void elige(Caballo elegido) {
+    if(this.sexo.equals("hembra")) {
+     System.out.println("duermo");
+    } 
+    if(this.sexo.equals("macho")) {
+      System.out.println("cabalgo");
+    }
+  }
+}

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tema9e1;
+package E1;
 
 /**
  *
@@ -11,12 +11,16 @@ package tema9e1;
  */
 public class Tema9E1 {
   public static void main(String[] args) {
-   Caballo blanquito = new Caballo("macho");
-   Caballo nieve = new Caballo("hembra");
-   Caballo rocinante = new Caballo("macho");
+   Caballo blanquito = new Caballo();
+   Caballo nieve = new Caballo();
+   Caballo rocinante = new Caballo();
+
    
    System.out.println("hola caballito");
-   rocinante.relincha();
-   rocinante.elige(rocinante);
+   rocinante.relincha(); 
+   rocinante.setSexo("macho");
+   nieve.elige(nieve);
+   
+  
   }
 }
