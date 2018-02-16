@@ -1,4 +1,4 @@
-public class Ejercicio6T7 {
+﻿public class Ejercicio6T7 {
   public static void main(String[] args) {
     
     int[] num; 
